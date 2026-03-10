@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="elwimen — hardware engineer at the intersection of embedded firmware, RF, power electronics, and underground exploration.">
+  <title>elwimen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div id="topo-bg" aria-hidden="true" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden;"></div>
+
+  <!-- ── Hero ── -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__identity" data-reveal>
+          <span class="hero__handle">elwimen</span>
+          <div class="hero__status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">available for collaboration</span>
+          </div>
+        </div>
+
+        <p class="hero__descriptor" data-reveal>hardware · rf · underground</p>
+
+        <p class="hero__manifesto" data-reveal>
+          15+ years building systems at the intersection of embedded firmware, power
+          electronics, RF, and mechanical engineering. Five innovation medals. Published
+          research. Systems deployed in national critical infrastructure. Currently
+          exploring what happens when you push LoRa signals through 50 metres of limestone.
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Projects ── -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-label" data-reveal>// projects</h2>
+
+        <div class="projects__grid">
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">esphome-radiacode-ble</h3>
+              <a href="https://github.com/elwimen/esphome-radiacode-ble" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">ESPHome custom component bridging BLE to the RadiaCode 110 radiation detector. Enables real-time environmental radiation monitoring via Home Assistant without modifying the detector firmware.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">ESPHome</li><li class="tag">C++</li><li class="tag">BLE</li><li class="tag">Radiation</li><li class="tag">Home Assistant</li><li class="tag">nRF52840</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">esphome-components</h3>
+              <a href="https://github.com/elwimen/esphome-components" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Umbrella repo for custom ESPHome components — includes the FDX-B RFID tag reader and RadiaCode BLE radiation detector integrations, each maintained as a submodule with ready-to-use YAML configurations.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">ESPHome</li><li class="tag">RFID</li><li class="tag">FDX-B</li><li class="tag">BLE</li><li class="tag">Home Assistant</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">esphome-fdx-reader</h3>
+              <a href="https://github.com/elwimen/esphome-fdx-reader" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">ESPHome component for reading FDX-B animal microchip tags. Integrates passive RFID tag scanning directly into Home Assistant via the ESPHome ecosystem.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">ESPHome</li><li class="tag">RFID</li><li class="tag">FDX-B</li><li class="tag">Home Assistant</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">Meshprobe</h3>
+              <a href="https://github.com/elwimen/Meshprobe" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Meshtastic MQTT client for monitoring and probing mesh network nodes. Subscribes to the Meshtastic MQTT broker and surfaces node telemetry, messages, and network topology.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Meshtastic</li><li class="tag">MQTT</li><li class="tag">Python</li><li class="tag">LoRa</li><li class="tag">Mesh Networking</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">meshtastic-knowledge-share</h3>
+              <div class="project-card__links">
+                <a href="https://elwimen.github.io/meshtastic-knowledge-share/" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="Visit site"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a>
+                <a href="https://github.com/elwimen/meshtastic-knowledge-share" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <p class="project-card__desc">Community knowledge base for Meshtastic — deployment guides, configuration references, and field notes from operating a real LoRa mesh network.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Meshtastic</li><li class="tag">LoRa</li><li class="tag">Documentation</li><li class="tag">HTML</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">browser-dispatch</h3>
+              <a href="https://github.com/elwimen/browser-dispatch" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Smart URL dispatcher for Linux — routes URLs to different browsers based on configurable domain rules. Includes a Textual TUI for managing rules without touching config files.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Python</li><li class="tag">Linux</li><li class="tag">Textual</li><li class="tag">TUI</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">olympus-tg5-tool</h3>
+              <a href="https://github.com/elwimen/olympus-tg5-tool" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Python tool for communicating with the Olympus TG-5 rugged camera over USB. Automates A-GPS data injection to keep satellite acquisition fast in the field — useful when you surface from a cave and want the camera ready.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Python</li><li class="tag">USB</li><li class="tag">GPS</li><li class="tag">Olympus TG-5</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">zram-bench</h3>
+              <a href="https://github.com/elwimen/zram-bench" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Configure, benchmark, and visualise zram swap on Linux. Tunes compression algorithms and sizes, runs throughput tests, and plots results — useful for memory-constrained embedded and edge systems.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Python</li><li class="tag">Linux</li><li class="tag">zram</li><li class="tag">Performance</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">httpfetch</h3>
+              <a href="https://github.com/elwimen/httpfetch" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Robust file sync tool for password-protected HTTP servers. Supports download resumption, regex-based file filtering, real-time progress bars with speed and ETA, and graceful Ctrl+C termination.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Python</li><li class="tag">HTTP</li><li class="tag">File Sync</li><li class="tag">TUI</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">setup-remote-ap</h3>
+              <a href="https://github.com/elwimen/setup-remote-ap" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Configure remote Linux machines as WiFi access points via SSH. Automates hostapd and dnsmasq setup for turning any Linux box into a wireless AP without physical access.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Shell</li><li class="tag">Linux</li><li class="tag">WiFi</li><li class="tag">SSH</li><li class="tag">hostapd</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">HL-L8260CDW</h3>
+              <a href="https://github.com/elwimen/HL-L8260CDW" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Setup script for the Brother HL-L8260CDW colour laser printer on Manjaro and Arch Linux. Handles driver installation, CUPS configuration, and the non-obvious steps that the official Brother installer skips on Arch-based systems.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Shell</li><li class="tag">Arch Linux</li><li class="tag">CUPS</li><li class="tag">Brother</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">ssh-user-provisioning</h3>
+              <a href="https://github.com/elwimen/ssh-user-provisioning" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Bash script suite for managing user accounts on remote Linux servers via SSH. Automates user creation, RSA key generation, sudo configuration, and removal across multiple servers in one pass.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Shell</li><li class="tag">SSH</li><li class="tag">Linux</li><li class="tag">DevOps</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">gog-downloader</h3>
+              <a href="https://github.com/elwimen/gog_downloader" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <p class="project-card__desc">Simple and effective GoG offline installer downloader. Fetches DRM-free installer packages from your GoG library for archiving and offline installation.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Python</li><li class="tag">GoG</li><li class="tag">Downloader</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Background & Capabilities ── -->
+    <section class="background" id="background">
+      <div class="container">
+        <h2 class="section-label" data-reveal>// background</h2>
+
+        <div class="stats-strip" data-reveal>
+          <div class="stat">
+            <span class="stat__value">15+</span>
+            <span class="stat__label">years embedded dev</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">5</span>
+            <span class="stat__label">innovation medals</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">3.6&nbsp;kW</span>
+            <span class="stat__label">highest power system</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">1.2&nbsp;GHz</span>
+            <span class="stat__label">highest freq built</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">50&nbsp;m</span>
+            <span class="stat__label">deepest deployment</span>
+          </div>
+        </div>
+
+        <div class="domains-grid">
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Embedded Firmware</h3>
+            <p class="domain-card__desc">Bare metal to RTOS to model-based development. Automotive-grade MISRA-C with static analysis and unit testing. Hypervisor-level work on ARM platforms.</p>
+            <p class="domain-card__stack">ARM Cortex · nRF52 · ESP32 · Simulink · Xen</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Power Electronics</h3>
+            <p class="domain-card__desc">CC/CV charger design for LiFePO4. BMS with cell balancing and SoC estimation. Buck, boost, SEPIC topologies to 3 kW+. PFC and inverter design with custom control loops.</p>
+            <p class="domain-card__stack">DC-DC · BMS · PFC · Inverter · LiFePO4</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">RF &amp; Radio</h3>
+            <p class="domain-card__desc">Licensed amateur operator (9A1CVW). LoRa/LoRaWAN system design and deployment. RF measurement and antenna analysis. Doppler radar modules.</p>
+            <p class="domain-card__stack">HF · LoRa · NanoVNA · Si5351 · 24 GHz</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">PCB Design</h3>
+            <p class="domain-card__desc">Multi-layer board design with EMI/EMC focus. From schematic capture through layout to manufacturing files. Production experience across power and industrial systems.</p>
+            <p class="domain-card__stack">KiCad · Altium · Eagle · Multi-layer · EMC</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Mechanical &amp; Thermal</h3>
+            <p class="domain-card__desc">3D printing for field-deployable enclosures. Thermal analysis and resistance measurement. CFD for fluid system optimization.</p>
+            <p class="domain-card__stack">Onshape ·  SOLIDWORKS · Fusion 360 · CFD</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Systems Integration</h3>
+            <p class="domain-card__desc">ICT monitoring across national infrastructure — electricity, water, gas, heat. Home automation, edge computing, embedded Linux.</p>
+            <p class="domain-card__stack">Home Assistant · ESPHome · Yocto · Jetson · Linux</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <a href="https://github.com/elwimen"
+           class="footer__github"
+           target="_blank"
+           rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          github.com/elwimen
+        </a>
+
+        <div class="footer__meta">
+          <span class="footer__coords">transmitting from 45°N 15°E</span>
+          <span class="footer__copy">© 2026 elwimen</span>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

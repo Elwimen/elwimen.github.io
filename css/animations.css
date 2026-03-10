@@ -1,0 +1,39 @@
+/* ── Status dot pulse ── */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5);
+  }
+  50% {
+    opacity: 0.75;
+    box-shadow: 0 0 0 7px rgba(52, 211, 153, 0);
+  }
+}
+
+/* ── Scroll reveal — initial hidden state ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity  600ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ── Scroll reveal — visible state ── */
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .status-dot {
+    animation: none;
+  }
+}

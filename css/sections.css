@@ -1,0 +1,146 @@
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: var(--space-32) 0 var(--space-24);
+}
+
+.hero__inner {
+  max-width: 740px;
+}
+
+.hero__identity {
+  margin-bottom: var(--space-6);
+}
+
+.hero__handle {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-hero);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero__descriptor {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  letter-spacing: 0.14em;
+  margin-bottom: var(--space-8);
+  margin-top: var(--space-6);
+}
+
+.hero__manifesto {
+  font-size: var(--text-lg);
+  color: var(--color-text-dim);
+  line-height: 1.8;
+  max-width: 620px;
+  font-weight: 300;
+}
+
+/* ── Projects ── */
+.projects {
+  padding: var(--space-24) 0;
+}
+
+/* ── Background ── */
+.background {
+  padding: var(--space-16) 0 var(--space-32);
+}
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--color-border-subtle);
+  padding: var(--space-10) 0;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.footer__github {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-dim);
+  transition: color var(--transition-fast);
+}
+
+.footer__github:hover {
+  color: var(--color-green);
+}
+
+.footer__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.footer__coords,
+.footer__copy {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ── Mobile overrides ── */
+@media (max-width: 720px) {
+  .hero {
+    padding: var(--space-20) 0 var(--space-16);
+    min-height: 100svh;
+  }
+
+  .hero__manifesto {
+    font-size: var(--text-base);
+  }
+
+  .projects {
+    padding: var(--space-16) 0;
+  }
+
+  .background {
+    padding: var(--space-12) 0 var(--space-20);
+  }
+
+  .stats-strip {
+    gap: var(--space-6) var(--space-8);
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .footer__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
+
+/* ── CRT scanline overlay ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.025) 3px,
+    rgba(0, 0, 0, 0.025) 4px
+  );
+}
