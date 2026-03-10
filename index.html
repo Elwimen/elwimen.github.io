@@ -77,42 +77,47 @@
           </div>
         </div>
 
+        <p class="publication-ref" data-reveal>
+          <span class="publication-ref__label">// published</span>
+          <em>Signal Converter with Three-Phase and Quadrature Outputs for Driving Synchros and Resolvers</em> — 2020
+        </p>
+
         <div class="domains-grid">
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">Embedded Firmware</h3>
-            <p class="domain-card__desc">Bare metal to RTOS to model-based development. Automotive-grade MISRA-C with static analysis and unit testing. Hypervisor-level work on ARM platforms.</p>
-            <p class="domain-card__stack">ARM Cortex · nRF52 · ESP32 · Simulink · Xen</p>
+            <p class="domain-card__desc">Bare metal to RTOS to model-based development. Automotive-grade MISRA-C with static analysis, unit testing, and dSpace TargetLink code generation for eMobility OEM platforms. OTA firmware updates over BLE on ARM Cortex-M4. NB-IoT remote sensing firmware. Hypervisor-level work on ARM.</p>
+            <p class="domain-card__stack">ARM Cortex · nRF52 · ESP32 · Simulink · TargetLink · Xen</p>
           </div>
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">Power Electronics</h3>
-            <p class="domain-card__desc">CC/CV charger design for LiFePO4. BMS with cell balancing and SoC estimation. Buck, boost, SEPIC topologies to 3 kW+. PFC and inverter design with custom control loops.</p>
-            <p class="domain-card__stack">DC-DC · BMS · PFC · Inverter · LiFePO4</p>
+            <p class="domain-card__desc">CC/CV charger design for LiFePO4. BMS with cell balancing and SoC estimation. Buck, boost, SEPIC topologies to 3 kW+. PFC and 3-phase inverter design. Custom power-line communications protocol for data over the power rail. 3-phase BLDC motor driver from first principles.</p>
+            <p class="domain-card__stack">DC-DC · BMS · PFC · Inverter · LiFePO4 · Power-line Comms</p>
           </div>
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">RF &amp; Radio</h3>
-            <p class="domain-card__desc">Licensed amateur operator (9A1CVW). LoRa/LoRaWAN system design and deployment. RF measurement and antenna analysis. Doppler radar modules.</p>
-            <p class="domain-card__stack">HF · LoRa · NanoVNA · Si5351 · 24 GHz</p>
+            <p class="domain-card__desc">Licensed amateur operator (9A1CVW). LoRa/LoRaWAN system design and deployment. FPGA-based FM frequency synthesizer. Frequency counter to 1.2 GHz. Rubidium frequency standard integration. RF measurement and antenna analysis. Doppler radar modules.</p>
+            <p class="domain-card__stack">HF · LoRa · FPGA · Rubidium · NanoVNA · Si5351 · 24 GHz</p>
           </div>
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">PCB Design</h3>
-            <p class="domain-card__desc">Multi-layer board design with EMI/EMC focus. From schematic capture through layout to manufacturing files. Production experience across power and industrial systems.</p>
-            <p class="domain-card__stack">KiCad · Altium · Eagle · Multi-layer · EMC</p>
+            <p class="domain-card__desc">Home-brew boards since 1994. Multi-layer design with EMI/EMC focus, including RF layouts up to 450 MHz for HAM applications. From schematic capture through layout to manufacturing files. Heritage in Protel; current work in KiCad and Altium. Production experience across power and industrial systems.</p>
+            <p class="domain-card__stack">KiCad · Altium · Protel · Multi-layer · EMC · 450 MHz</p>
           </div>
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">Mechanical &amp; Thermal</h3>
-            <p class="domain-card__desc">3D printing for field-deployable enclosures. Thermal analysis and resistance measurement. CFD for fluid system optimization.</p>
-            <p class="domain-card__stack">Onshape · SOLIDWORKS · Fusion 360 · CFD</p>
+            <p class="domain-card__desc">Converted Proxxon MF70 milling machine to CNC. Designed and built a Delta 3D printer from scratch. 3D printing for field-deployable enclosures. Thermal analysis and resistance measurement. CFD for water treatment system optimization.</p>
+            <p class="domain-card__stack">Onshape · SOLIDWORKS · Fusion 360 · CFD · CNC · Delta FDM</p>
           </div>
 
           <div class="domain-card" data-reveal>
             <h3 class="domain-card__title">Systems Integration</h3>
-            <p class="domain-card__desc">ICT monitoring across national infrastructure — electricity, water, gas, heat. Home automation, edge computing, embedded Linux.</p>
-            <p class="domain-card__stack">Home Assistant · ESPHome · Yocto · Jetson · Linux</p>
+            <p class="domain-card__desc">ICT infrastructure for all hydroelectric power plants in Croatia. NB-IoT, LoRaWAN, and Sigfox field devices for remote sensing. Monitoring across national infrastructure — electricity, water, gas, heat. Home automation, edge computing, embedded Linux.</p>
+            <p class="domain-card__stack">NB-IoT · LoRaWAN · Sigfox · Home Assistant · Yocto · Linux</p>
           </div>
 
         </div>
@@ -167,6 +172,36 @@
             <p class="project-card__desc">Meshtastic MQTT client for monitoring and probing mesh network nodes. Subscribes to the Meshtastic MQTT broker and surfaces node telemetry, messages, and network topology.</p>
             <ul class="tag-list" aria-label="Technologies">
               <li class="tag">Meshtastic</li><li class="tag">MQTT</li><li class="tag">Python</li><li class="tag">LoRa</li><li class="tag">Mesh Networking</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">High-Power LED Headlamp</h3>
+            </div>
+            <p class="project-card__desc">Custom-built caving headlamp — integrated LiPo battery pack, USB-C charging circuit, Cree high-power LED with adjustable beam optics, fully waterproof enclosure. Designed for sustained underground use where off-the-shelf lights fail.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Power Electronics</li><li class="tag">LiPo</li><li class="tag">USB-C</li><li class="tag">Cree LED</li><li class="tag">Waterproof</li><li class="tag">PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">Web-enabled CNC / 3D Printer</h3>
+            </div>
+            <p class="project-card__desc">ARM-based platform running Klipper3D firmware with a REST API layer for hardware-agnostic machine control. Converted a Proxxon MF70 milling machine to CNC; same platform drives a Delta 3D printer. Ongoing since 2019.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">ARM</li><li class="tag">Klipper3D</li><li class="tag">REST</li><li class="tag">CNC</li><li class="tag">Raspberry Pi</li><li class="tag">Delta FDM</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <h3 class="project-card__title">FPGA FM Transmitter</h3>
+            </div>
+            <p class="project-card__desc">Frequency synthesizer and mixer implemented entirely on an Altera Cyclone III FPGA. Direct digital synthesis generates the carrier; FM modulation applied in the FPGA fabric. Built as an exploration of high-speed digital signal generation without a dedicated RF chip.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">FPGA</li><li class="tag">Altera</li><li class="tag">RF</li><li class="tag">DDS</li><li class="tag">Verilog</li>
             </ul>
           </article>
 
