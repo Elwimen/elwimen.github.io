@@ -49,6 +49,76 @@
 
   <main>
 
+    <!-- ── Background & Capabilities ── -->
+    <section class="background" id="background">
+      <div class="container">
+        <h2 class="section-label" data-reveal>// background</h2>
+
+        <div class="stats-strip" data-reveal>
+          <div class="stat">
+            <span class="stat__value">15+</span>
+            <span class="stat__label">years embedded dev</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">5</span>
+            <span class="stat__label">innovation medals</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">3.6&nbsp;kW</span>
+            <span class="stat__label">highest power system</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">1.2&nbsp;GHz</span>
+            <span class="stat__label">highest freq built</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">50&nbsp;m</span>
+            <span class="stat__label">deepest deployment</span>
+          </div>
+        </div>
+
+        <div class="domains-grid">
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Embedded Firmware</h3>
+            <p class="domain-card__desc">Bare metal to RTOS to model-based development. Automotive-grade MISRA-C with static analysis and unit testing. Hypervisor-level work on ARM platforms.</p>
+            <p class="domain-card__stack">ARM Cortex · nRF52 · ESP32 · Simulink · Xen</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Power Electronics</h3>
+            <p class="domain-card__desc">CC/CV charger design for LiFePO4. BMS with cell balancing and SoC estimation. Buck, boost, SEPIC topologies to 3 kW+. PFC and inverter design with custom control loops.</p>
+            <p class="domain-card__stack">DC-DC · BMS · PFC · Inverter · LiFePO4</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">RF &amp; Radio</h3>
+            <p class="domain-card__desc">Licensed amateur operator (9A1CVW). LoRa/LoRaWAN system design and deployment. RF measurement and antenna analysis. Doppler radar modules.</p>
+            <p class="domain-card__stack">HF · LoRa · NanoVNA · Si5351 · 24 GHz</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">PCB Design</h3>
+            <p class="domain-card__desc">Multi-layer board design with EMI/EMC focus. From schematic capture through layout to manufacturing files. Production experience across power and industrial systems.</p>
+            <p class="domain-card__stack">KiCad · Altium · Eagle · Multi-layer · EMC</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Mechanical &amp; Thermal</h3>
+            <p class="domain-card__desc">3D printing for field-deployable enclosures. Thermal analysis and resistance measurement. CFD for fluid system optimization.</p>
+            <p class="domain-card__stack">Onshape · SOLIDWORKS · Fusion 360 · CFD</p>
+          </div>
+
+          <div class="domain-card" data-reveal>
+            <h3 class="domain-card__title">Systems Integration</h3>
+            <p class="domain-card__desc">ICT monitoring across national infrastructure — electricity, water, gas, heat. Home automation, edge computing, embedded Linux.</p>
+            <p class="domain-card__stack">Home Assistant · ESPHome · Yocto · Jetson · Linux</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ── Projects ── -->
     <section class="projects" id="projects">
       <div class="container">
@@ -114,167 +184,85 @@
             </ul>
           </article>
 
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">browser-dispatch</h3>
-              <a href="https://github.com/elwimen/browser-dispatch" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Smart URL dispatcher for Linux — routes URLs to different browsers based on configurable domain rules. Includes a Textual TUI for managing rules without touching config files.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Python</li><li class="tag">Linux</li><li class="tag">Textual</li><li class="tag">TUI</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">olympus-tg5-tool</h3>
-              <a href="https://github.com/elwimen/olympus-tg5-tool" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Python tool for communicating with the Olympus TG-5 rugged camera over USB. Automates A-GPS data injection to keep satellite acquisition fast in the field — useful when you surface from a cave and want the camera ready.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Python</li><li class="tag">USB</li><li class="tag">GPS</li><li class="tag">Olympus TG-5</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">zram-bench</h3>
-              <a href="https://github.com/elwimen/zram-bench" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Configure, benchmark, and visualise zram swap on Linux. Tunes compression algorithms and sizes, runs throughput tests, and plots results — useful for memory-constrained embedded and edge systems.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Python</li><li class="tag">Linux</li><li class="tag">zram</li><li class="tag">Performance</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">httpfetch</h3>
-              <a href="https://github.com/elwimen/httpfetch" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Robust file sync tool for password-protected HTTP servers. Supports download resumption, regex-based file filtering, real-time progress bars with speed and ETA, and graceful Ctrl+C termination.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Python</li><li class="tag">HTTP</li><li class="tag">File Sync</li><li class="tag">TUI</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">setup-remote-ap</h3>
-              <a href="https://github.com/elwimen/setup-remote-ap" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Configure remote Linux machines as WiFi access points via SSH. Automates hostapd and dnsmasq setup for turning any Linux box into a wireless AP without physical access.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Shell</li><li class="tag">Linux</li><li class="tag">WiFi</li><li class="tag">SSH</li><li class="tag">hostapd</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">HL-L8260CDW</h3>
-              <a href="https://github.com/elwimen/HL-L8260CDW" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Setup script for the Brother HL-L8260CDW colour laser printer on Manjaro and Arch Linux. Handles driver installation, CUPS configuration, and the non-obvious steps that the official Brother installer skips on Arch-based systems.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Shell</li><li class="tag">Arch Linux</li><li class="tag">CUPS</li><li class="tag">Brother</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">ssh-user-provisioning</h3>
-              <a href="https://github.com/elwimen/ssh-user-provisioning" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Bash script suite for managing user accounts on remote Linux servers via SSH. Automates user creation, RSA key generation, sudo configuration, and removal across multiple servers in one pass.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Shell</li><li class="tag">SSH</li><li class="tag">Linux</li><li class="tag">DevOps</li>
-            </ul>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-card__header">
-              <h3 class="project-card__title">gog-downloader</h3>
-              <a href="https://github.com/elwimen/gog_downloader" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            </div>
-            <p class="project-card__desc">Simple and effective GoG offline installer downloader. Fetches DRM-free installer packages from your GoG library for archiving and offline installation.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Python</li><li class="tag">GoG</li><li class="tag">Downloader</li>
-            </ul>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ── Background & Capabilities ── -->
-    <section class="background" id="background">
+    <!-- ── Tools ── -->
+    <section class="tools" id="tools">
       <div class="container">
-        <h2 class="section-label" data-reveal>// background</h2>
+        <h2 class="section-label" data-reveal>// tools</h2>
 
-        <div class="stats-strip" data-reveal>
-          <div class="stat">
-            <span class="stat__value">15+</span>
-            <span class="stat__label">years embedded dev</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">5</span>
-            <span class="stat__label">innovation medals</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">3.6&nbsp;kW</span>
-            <span class="stat__label">highest power system</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">1.2&nbsp;GHz</span>
-            <span class="stat__label">highest freq built</span>
-          </div>
-          <div class="stat">
-            <span class="stat__value">50&nbsp;m</span>
-            <span class="stat__label">deepest deployment</span>
-          </div>
-        </div>
+        <ul class="tools-list" role="list">
 
-        <div class="domains-grid">
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/browser-dispatch" class="tools-item__name" target="_blank" rel="noopener noreferrer">browser-dispatch</a>
+              <span class="tools-item__desc">Smart URL dispatcher for Linux — route URLs to different browsers by domain rule, with a Textual TUI</span>
+            </div>
+            <span class="tag">Python</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">Embedded Firmware</h3>
-            <p class="domain-card__desc">Bare metal to RTOS to model-based development. Automotive-grade MISRA-C with static analysis and unit testing. Hypervisor-level work on ARM platforms.</p>
-            <p class="domain-card__stack">ARM Cortex · nRF52 · ESP32 · Simulink · Xen</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/olympus-tg5-tool" class="tools-item__name" target="_blank" rel="noopener noreferrer">olympus-tg5-tool</a>
+              <span class="tools-item__desc">USB tool for the Olympus TG-5 rugged camera — automates A-GPS data injection for fast satellite acquisition in the field</span>
+            </div>
+            <span class="tag">Python</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">Power Electronics</h3>
-            <p class="domain-card__desc">CC/CV charger design for LiFePO4. BMS with cell balancing and SoC estimation. Buck, boost, SEPIC topologies to 3 kW+. PFC and inverter design with custom control loops.</p>
-            <p class="domain-card__stack">DC-DC · BMS · PFC · Inverter · LiFePO4</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/zram-bench" class="tools-item__name" target="_blank" rel="noopener noreferrer">zram-bench</a>
+              <span class="tools-item__desc">Configure, benchmark, and visualise zram swap on Linux — useful for memory-constrained embedded and edge systems</span>
+            </div>
+            <span class="tag">Python</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">RF &amp; Radio</h3>
-            <p class="domain-card__desc">Licensed amateur operator (9A1CVW). LoRa/LoRaWAN system design and deployment. RF measurement and antenna analysis. Doppler radar modules.</p>
-            <p class="domain-card__stack">HF · LoRa · NanoVNA · Si5351 · 24 GHz</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/httpfetch" class="tools-item__name" target="_blank" rel="noopener noreferrer">httpfetch</a>
+              <span class="tools-item__desc">Robust file sync from password-protected HTTP servers — resumable downloads, regex filtering, real-time progress</span>
+            </div>
+            <span class="tag">Python</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">PCB Design</h3>
-            <p class="domain-card__desc">Multi-layer board design with EMI/EMC focus. From schematic capture through layout to manufacturing files. Production experience across power and industrial systems.</p>
-            <p class="domain-card__stack">KiCad · Altium · Eagle · Multi-layer · EMC</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/setup-remote-ap" class="tools-item__name" target="_blank" rel="noopener noreferrer">setup-remote-ap</a>
+              <span class="tools-item__desc">Configure remote Linux machines as WiFi access points over SSH — automates hostapd and dnsmasq setup</span>
+            </div>
+            <span class="tag">Shell</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">Mechanical &amp; Thermal</h3>
-            <p class="domain-card__desc">3D printing for field-deployable enclosures. Thermal analysis and resistance measurement. CFD for fluid system optimization.</p>
-            <p class="domain-card__stack">Onshape ·  SOLIDWORKS · Fusion 360 · CFD</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/HL-L8260CDW" class="tools-item__name" target="_blank" rel="noopener noreferrer">HL-L8260CDW</a>
+              <span class="tools-item__desc">Brother HL-L8260CDW printer setup for Manjaro and Arch Linux — covers the steps the official installer skips</span>
+            </div>
+            <span class="tag">Shell</span>
+          </li>
 
-          <div class="domain-card" data-reveal>
-            <h3 class="domain-card__title">Systems Integration</h3>
-            <p class="domain-card__desc">ICT monitoring across national infrastructure — electricity, water, gas, heat. Home automation, edge computing, embedded Linux.</p>
-            <p class="domain-card__stack">Home Assistant · ESPHome · Yocto · Jetson · Linux</p>
-          </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/ssh-user-provisioning" class="tools-item__name" target="_blank" rel="noopener noreferrer">ssh-user-provisioning</a>
+              <span class="tools-item__desc">Manage user accounts on remote Linux servers via SSH — creation, RSA key generation, sudo config, and removal</span>
+            </div>
+            <span class="tag">Shell</span>
+          </li>
 
-        </div>
+          <li class="tools-item" data-reveal>
+            <div class="tools-item__main">
+              <a href="https://github.com/elwimen/gog_downloader" class="tools-item__name" target="_blank" rel="noopener noreferrer">gog-downloader</a>
+              <span class="tools-item__desc">GoG offline installer downloader — fetches DRM-free installer packages for archiving and offline installation</span>
+            </div>
+            <span class="tag">Python</span>
+          </li>
+
+        </ul>
       </div>
     </section>
+
 
   </main>
 
